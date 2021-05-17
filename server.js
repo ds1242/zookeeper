@@ -4,8 +4,6 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 const fs = require('fs');
 const path = require('path');
-const { stringify } = require('qs');
-const { type } = require('node:os');
 
 // parse incoming string or array data
 app.use(express.urlencoded({ extended: true }));
