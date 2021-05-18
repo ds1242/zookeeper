@@ -10,6 +10,8 @@ app.use(express.urlencoded({ extended: true }));
 // parse incoming JSON data
 app.use(express.json());
 
+app.use(express.static('public'));
+
 function filterByQuery(query, animalsArray) {
     let personalityTraitsArray = [];
     // note we save the animalsArray as filtered results here:
@@ -110,6 +112,15 @@ app.post('/api/animals', (req, res) => {
     }
 });
 
+app.get('/', (req ,res) => {
+    res.sendFile(path.join(__dirname, './public/index.html'));
+});
+
+
+
+
+
+
 app.listen(PORT, () =>{
-    console.log(`API server is now on ${PORT}`);
+console.log(`API server is now on ${PORT}`);
 });
