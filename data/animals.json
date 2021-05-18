@@ -135,6 +135,26 @@
         "hungry"
       ],
       "id": "13"
+    },
+    {
+      "name": "New animal",
+      "species": "Zebra",
+      "diet": "herbivore",
+      "personalityTraits": [
+        "hungry"
+      ],
+      "id": "14"
+    },
+    {
+      "name": "Lana Lou",
+      "species": "Wolf Dog",
+      "diet": "omnivore",
+      "personalityTraits": [
+        "hungry",
+        "zany",
+        "loving"
+      ],
+      "id": "15"
     }
   ]
 }
